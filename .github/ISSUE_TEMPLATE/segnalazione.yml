@@ -1,0 +1,48 @@
+name: Segnalazione
+description: Un bug, un effetto che non funziona, un errore di traduzione o un suggerimento
+title: "[Segnalazione] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie! Ogni segnalazione ci aiuta a migliorare TCGITA negli aggiornamenti futuri.
+        Controlla prima che non ci sia già una segnalazione uguale.
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Che tipo di segnalazione è?
+      options:
+        - Bug (qualcosa non funziona o l'app si blocca)
+        - Effetto di una carta che non funziona come dovrebbe
+        - Errore o imprecisione nella traduzione
+        - Suggerimento o idea
+    validations:
+      required: true
+  - type: input
+    id: carta
+    attributes:
+      label: Codice della carta (se riguarda una carta)
+      description: Per esempio OP01-024. Lo trovi sulla carta.
+      placeholder: OP01-024
+  - type: textarea
+    id: cosa
+    attributes:
+      label: Cosa è successo?
+      description: Descrivi il problema. Se è una traduzione, scrivi il testo sbagliato e come dovrebbe essere.
+    validations:
+      required: true
+  - type: textarea
+    id: atteso
+    attributes:
+      label: Cosa ti aspettavi che succedesse?
+  - type: input
+    id: versione
+    attributes:
+      label: Versione scaricata
+      description: Il nome della Release da cui hai scaricato, per esempio v0.1.0.
+      placeholder: v0.1.0
+  - type: textarea
+    id: log
+    attributes:
+      label: File setup.log (se l'app ha un problema)
+      description: Lo trovi in %APPDATA%\it.tcgita.app\data. Puoi trascinarlo qui dentro oppure incollarne il contenuto.

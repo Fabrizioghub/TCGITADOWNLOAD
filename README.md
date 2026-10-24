@@ -3,7 +3,7 @@
 ### Il simulatore fan made con le carte e gli effetti in italiano
 
 Per quanto ne sappiamo, è il **primo simulatore di One Piece TCG pensato per giocare con gli effetti delle carte in italiano**.
-Gratuito, per Windows.
+Gratuito, per Windows, **in continuo aggiornamento**.
 
 > [!IMPORTANT]
 > **Progetto fan made, non ufficiale.** TCGITA non è affiliato, approvato né sponsorizzato da Bandai o da altri titolari dei diritti di One Piece.
@@ -23,11 +23,20 @@ Gratuito, per Windows.
 Requisiti: Windows 10 o 11 e una connessione a internet. In alternativa all'installer c'è **`TCGITA-portable.zip`**:
 estrai **tutto** il contenuto in una cartella e avvia `tcgita.exe` (non avviarlo da dentro lo zip).
 
+## Un progetto in continuo aggiornamento
+
+TCGITA è in sviluppo costante: **gli effetti delle carte, le funzionalità e soprattutto le traduzioni vengono migliorati a ogni versione.**
+Dove ci sono imperfezioni, ci impegniamo a correggerle.
+
+**Aiutaci a migliorarlo.** Se trovi un bug, un effetto che non funziona come dovrebbe, una traduzione imprecisa o qualsiasi altra imperfezione,
+[**segnalacelo qui**](../../issues/new/choose): ogni segnalazione ci permette di sistemarla negli aggiornamenti futuri.
+Per aiutarci a capire il problema indica, se puoi, il **codice della carta** (per esempio `OP01-024`), cosa è successo e cosa ti aspettavi.
+
 ## Perché esiste
 
 La maggior parte dei simulatori del gioco è interamente in inglese. Per chi comincia, imparare le regole e leggere gli effetti delle carte
 in una lingua che non è la propria è un ostacolo in più. TCGITA offre l'interfaccia e **i testi delle carte in italiano**, per capire
-meglio il sistema di gioco. La traduzione degli effetti è generata automaticamente dal testo ufficiale in inglese e può contenere qualche imperfezione:
+meglio il sistema di gioco. La traduzione degli effetti è generata automaticamente dal testo ufficiale in inglese e può contenere imperfezioni:
 con il menu **Testo carte** puoi sempre passare all'originale.
 
 ## Cosa puoi fare
@@ -49,10 +58,10 @@ Se compare **"Dati delle carte non aggiornati"**, premi **Aggiorna i dati delle 
 Scarica l'ultima versione da **[Releases](../../releases/latest)** e installala sopra la vecchia: i tuoi dati e le immagini già scaricate restano.
 Con lo zip, estrai la nuova versione in una cartella nuova.
 
-## Assistenza
+## Segnalazioni e assistenza
 
-Apri una segnalazione in **[Issues](../../issues)** e allega il file `setup.log` che trovi in `%APPDATA%\it.tcgita.app\data`,
-scrivendo cosa stavi facendo.
+Usa **[Issues → Nuova segnalazione](../../issues/new/choose)** per bug, effetti che non funzionano, errori di traduzione e suggerimenti.
+Se l'app ha un problema, allega il file `setup.log` che trovi in `%APPDATA%\it.tcgita.app\data` e scrivi cosa stavi facendo.
 
 ## Note legali
 
