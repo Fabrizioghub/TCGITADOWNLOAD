@@ -48,8 +48,17 @@ con il menu **Testo carte** puoi sempre passare all'originale.
 
 ## Giocare online: se non trova il server
 
-Il server online, per ora, ha un indirizzo che può cambiare. L'app prova ad aggiornarlo da sola leggendo il file [`hub.json`](hub.json) di questa pagina.
-Se non ci riesce, nella lobby apri il blocco **Server di gioco**, copia da [`hub.json`](hub.json) l'indirizzo che comincia con `https://` e incollalo nella casella.
+Il server online, per ora, ha un indirizzo che può cambiare. **L'app lo aggiorna da sola**, a ogni avvio e quando "Partita veloce" non riesce a collegarsi:
+di solito non devi fare niente. Puoi anche premere **Controlla il link da solo** nel blocco **Server di gioco** della lobby.
+
+**Solo se l'app non ci riesce**, copia l'indirizzo attuale del server di gioco qui sotto, poi nella lobby apri **Server di gioco**, incollalo nella casella
+e premi **Usa questo indirizzo**:
+
+**Indirizzo attuale del server di gioco**
+
+```
+https://ethical-leone-district-designer.trycloudflare.com
+```
 
 Se compare **"Dati delle carte non aggiornati"**, premi **Aggiorna i dati delle carte** nella lobby e riprova.
 
