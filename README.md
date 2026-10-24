@@ -12,16 +12,16 @@ Gratuito, per Windows, **in continuo aggiornamento**.
 
 ## Scarica e gioca
 
-**[⬇ Scarica l'ultima versione per Windows](../../releases/latest)**: scegli **`TCGITA-setup.exe`**.
+**[⬇ Scarica l'ultima versione per Windows](../../releases/latest)**: scegli **`TCGITA-setup-vX.Y.Z.exe`** (al posto di X.Y.Z c'è il numero della versione: più alto è, più è recente).
 
-1. **Installa** `TCGITA-setup.exe` e avvialo (crea il collegamento sul Desktop). Se Windows mostra *"Windows ha protetto il PC"*,
+1. **Installa** `TCGITA-setup-vX.Y.Z.exe` e avvialo (crea il collegamento sul Desktop). Se Windows mostra *"Windows ha protetto il PC"*,
    premi **Ulteriori informazioni** e poi **Esegui comunque**: succede perché il programma non è firmato.
 2. **Attendi il primo avvio (circa 4 minuti, una volta sola).** L'app scarica l'elenco delle carte dal sito ufficiale; non chiuderla.
    Poi puoi giocare subito: le immagini arrivano in background e in alto compare "Immagini N%" finché non sono tutte arrivate.
 3. **Premi "Accedi con Discord"** e autorizza TCGITA nel browser: il tuo nome in gioco sarà il tuo nome Discord. TCGITA legge solo il tuo nome utente
    e non vede mai la tua password. Poi sei nella lobby: premi **Partita veloce** per giocare online oppure **Solo contro il bot** per provare da solo.
 
-Requisiti: Windows 10 o 11 e una connessione a internet. In alternativa all'installer c'è **`TCGITA-portable.zip`**:
+Requisiti: Windows 10 o 11 e una connessione a internet. In alternativa all'installer c'è **`TCGITA-portable-vX.Y.Z.zip`**:
 estrai **tutto** il contenuto in una cartella e avvia `tcgita.exe` (non avviarlo da dentro lo zip).
 
 ## Un progetto in continuo aggiornamento
