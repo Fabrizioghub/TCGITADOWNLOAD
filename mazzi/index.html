@@ -60,6 +60,14 @@
   .banbox li.pair { border-color:#c9a010; }
   .banbox b { font-size:13px; }
   .banbox a { color:var(--accent); }
+  .filters { display:flex; flex-wrap:wrap; gap:6px 18px; padding:6px 16px 4px; align-items:center; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+  .chip { background:var(--panel); color:var(--text); border:1px solid var(--line); border-radius:999px; padding:5px 12px; font:600 13px system-ui; cursor:pointer; }
+  .chip.on { background:var(--accent); color:#1b1530; border-color:var(--accent); }
+  .chip.col.on { color:#fff; border-color:#fff8; }
+  .count { color:var(--dim); font-size:13px; padding:2px 16px 0; }
+  .tag { display:inline-block; margin-left:6px; padding:1px 7px; border-radius:999px; font-size:11px; background:#0006; }
+  .tag.old { background:#c9a01088; }
   .none { color:var(--dim); padding:24px 16px; }
   footer { border-top:1px solid var(--line); color:var(--dim); font-size:12px; padding:14px 16px 28px; max-width:900px; }
   footer a { color:var(--accent); }
@@ -68,13 +76,14 @@
 <body>
 <header>
   <img src="../logo.png" alt="TCG Italia" width="44" height="44">
-  <div><h1>TCGITA · Mazzi</h1><div class="sub">Le liste più giocate, pronte per il simulatore</div></div>
+  <div><h1>TCGITA · Mazzi</h1><div class="sub">Un mazzo per Leader, pronto per il simulatore</div></div>
   <nav>
     <a class="btn" href="../">Scarica il simulatore</a>
     <a class="btn ghost" href="https://discord.gg/6hSnUejG33">Discord</a>
   </nav>
 </header>
 <div class="tools"><input id="q" type="search" placeholder="Cerca un Leader o un mazzo…" aria-label="Cerca un mazzo"></div>
+<div class="filters" id="filters" aria-label="Filtri"></div>
 <div class="how">Copia la lista o scarica il .txt, poi nel simulatore: <b>Editor mazzi → Importa lista / Importa file</b>.</div>
 <section class="banbox" id="ban"></section>
 <main id="decks"><div class="none">Carico i mazzi…</div></main>
@@ -157,11 +166,13 @@
 
   function render(decks) {
     const root = document.getElementById("decks");
+    document.getElementById("count").textContent = `${decks.length} mazzi`;
     root.replaceChildren();
     if (decks.length === 0) return root.append(el("div", "none", "Nessun mazzo trovato."));
     for (const d of decks) {
       const box = el("section", "deck");
       const h = el("h2", "", d.name);
+      h.append(el("span", d.legal ? "tag" : "tag old", d.legal ? "Banned 12/10/2026" : "Storico"));
       h.style.background = header(d.name);
       const lead = el("div", "leaderbox");
       const li = el("img");
@@ -191,19 +202,46 @@
       };
       const foot = el("div", "foot");
       foot.append(copy, save);
-      box.append(list, foot, el("div", "usage", "Uso nel simulatore: in arrivo"));
+      const info = [d.set, d.month && new Date(d.month + "-01T00:00:00").toLocaleDateString("it-IT", { month: "long", year: "numeric" })].filter(Boolean).join(" · ");
+      box.append(list, foot, el("div", "usage", d.legal ? info : `${info} · non rispetta la banned list attuale`));
       root.append(box);
     }
   }
 
+  const COLOR_IT = { Red:"Rosso", Green:"Verde", Blue:"Blu", Purple:"Viola", Black:"Nero", Yellow:"Giallo" };
+  const state = { era:"all", color:"all", q:"" };
+  function chips(root, label, options, key, onChange) {
+    const wrap = el("div", "chips");
+    wrap.append(el("b", "", label));
+    for (const [value, text, cls] of options) {
+      const b = el("button", `chip ${cls || ""}`, text);
+      if (cls) b.style.background = "";
+      b.onclick = () => { state[key] = value; onChange(); };
+      b.dataset.v = value; b.dataset.k = key;
+      wrap.append(b);
+    }
+    root.append(wrap);
+  }
   Promise.all([fetch("mazzi.json").then((r) => r.json()), fetch("cards.json").then((r) => r.json())]).then(([{ decks, banlist }, texts]) => {
     cards = texts;
     renderBan(banlist);
-    render(decks);
-    document.getElementById("q").addEventListener("input", (e) => {
-      const q = e.target.value.trim().toLowerCase();
-      render(decks.filter((d) => !q || d.name.toLowerCase().includes(q) || d.leader.name.toLowerCase().includes(q)));
-    });
+    const refresh = () => {
+      document.querySelectorAll(".chip").forEach((b) => {
+        b.classList.toggle("on", state[b.dataset.k] === b.dataset.v);
+        if (b.classList.contains("col")) b.style.background = b.dataset.v !== "all" && b.classList.contains("on") ? COLORS[b.dataset.v] : "";
+      });
+      const q = state.q.trim().toLowerCase();
+      render(decks.filter((d) =>
+        (state.era === "all" || (state.era === "ban" ? d.legal : !d.legal)) &&
+        (state.color === "all" || d.colors.includes(state.color)) &&
+        (!q || d.name.toLowerCase().includes(q) || d.leader.name.toLowerCase().includes(q))));
+    };
+    const f = document.getElementById("filters");
+    chips(f, "Periodo", [["all", "Tutti"], ["ban", "Banned 12 ottobre 2026 (meta attuale)"], ["old", "Storici (prima della banned)"]], "era", refresh);
+    chips(f, "Colore", [["all", "Tutti"], ...Object.entries(COLOR_IT).map(([k, v]) => [k, v, "col"])], "color", refresh);
+    f.after(Object.assign(el("div", "count"), { id: "count" }));
+    document.getElementById("q").addEventListener("input", (e) => { state.q = e.target.value; refresh(); });
+    refresh();
   }).catch(() => (document.getElementById("decks").textContent = "Non riesco a caricare i mazzi. Riprova più tardi."));
 </script>
 </body>
