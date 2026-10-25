@@ -68,6 +68,11 @@ Se compare **"Dati delle carte non aggiornati"**, premi **Aggiorna i dati delle 
 Scarica l'ultima versione da **[Releases](../../releases/latest)** e installala sopra la vecchia: i tuoi dati e le immagini già scaricate restano.
 Con lo zip, estrai la nuova versione in una cartella nuova.
 
+## Community su Discord
+
+Entra nel server Discord di TCGITA per trovare avversari, scambiare mazzi, chiedere aiuto e ricevere gli annunci delle nuove versioni:
+**[discord.gg/6hSnUejG33](https://discord.gg/6hSnUejG33)**
+
 ## Segnalazioni e assistenza
 
 Usa **[Issues → Nuova segnalazione](../../issues/new/choose)** per bug, effetti che non funzionano, errori di traduzione e suggerimenti.
