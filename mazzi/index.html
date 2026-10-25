@@ -52,6 +52,14 @@
   .foot { display:flex; gap:6px; padding:10px 8px 6px; }
   .foot .btn { flex:1; padding:7px 4px; font-size:13px; }
   .usage { text-align:center; color:var(--dim); font-size:12px; padding:2px 8px 10px; }
+  .banbox { margin:4px 16px 4px; padding:12px 14px; background:var(--panel); border:1px solid var(--line); border-radius:10px; max-width:900px; }
+  .banbox h2 { margin:0 0 6px; font-size:15px; }
+  .banbox .sub { color:var(--dim); font-size:12px; margin-bottom:8px; }
+  .banbox ul { list-style:none; margin:0 0 8px; padding:0; display:flex; flex-wrap:wrap; gap:6px; }
+  .banbox li { background:#0003; border:1px solid var(--line); border-radius:6px; padding:3px 8px; font-size:13px; cursor:default; }
+  .banbox li.pair { border-color:#c9a010; }
+  .banbox b { font-size:13px; }
+  .banbox a { color:var(--accent); }
   .none { color:var(--dim); padding:24px 16px; }
   footer { border-top:1px solid var(--line); color:var(--dim); font-size:12px; padding:14px 16px 28px; max-width:900px; }
   footer a { color:var(--accent); }
@@ -68,6 +76,7 @@
 </header>
 <div class="tools"><input id="q" type="search" placeholder="Cerca un Leader o un mazzo…" aria-label="Cerca un mazzo"></div>
 <div class="how">Copia la lista o scarica il .txt, poi nel simulatore: <b>Editor mazzi → Importa lista / Importa file</b>.</div>
+<section class="banbox" id="ban"></section>
 <main id="decks"><div class="none">Carico i mazzi…</div></main>
 <footer>
   <p><b>Sito a supporto del simulatore TCGITA</b>, progetto fan made e non ufficiale, non affiliato a Bandai né agli autori di One Piece. Serve a giocare e allenarsi in italiano, senza fini di lucro.
@@ -122,6 +131,30 @@
     row.addEventListener("mouseleave", clear);
   }
 
+  function renderBan(ban) {
+    const box = document.getElementById("ban");
+    const nm = (c) => (cards[c] ? cards[c].n : c);
+    const since = new Date(ban.since + "T00:00:00").toLocaleDateString("it-IT", { day: "numeric", month: "long", year: "numeric" });
+    box.replaceChildren(el("h2", "", `Banned list in vigore dal ${since}`),
+      el("div", "sub", "Tutti i mazzi qui sotto la rispettano. Fonte: annuncio ufficiale Bandai."));
+    box.append(el("b", "", "Carte vietate"));
+    const a = el("ul");
+    for (const c of ban.banned) { const li = el("li", "", `${nm(c)} (${c})`); preview(li, c); a.append(li); }
+    box.append(a, el("b", "", "Coppie vietate (non possono stare nello stesso mazzo)"));
+    const b = el("ul");
+    for (const [x, y] of ban.pairs) {
+      const li = el("li", "pair");
+      const l = el("span", "", nm(x)); preview(l, x);
+      const r = el("span", "", nm(y)); preview(r, y);
+      li.append(l, " + ", r);
+      b.append(li);
+    }
+    box.append(b);
+    const link = el("a", "", "Banned list ufficiale");
+    link.href = "https://en.onepiece-cardgame.com/rules/restriction/";
+    box.append(link);
+  }
+
   function render(decks) {
     const root = document.getElementById("decks");
     root.replaceChildren();
@@ -163,8 +196,9 @@
     }
   }
 
-  Promise.all([fetch("mazzi.json").then((r) => r.json()), fetch("cards.json").then((r) => r.json())]).then(([{ decks }, texts]) => {
+  Promise.all([fetch("mazzi.json").then((r) => r.json()), fetch("cards.json").then((r) => r.json())]).then(([{ decks, banlist }, texts]) => {
     cards = texts;
+    renderBan(banlist);
     render(decks);
     document.getElementById("q").addEventListener("input", (e) => {
       const q = e.target.value.trim().toLowerCase();

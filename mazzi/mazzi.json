@@ -739,130 +739,6 @@
    ]
   },
   {
-   "id": "86",
-   "name": "Green Mihawk",
-   "leader": {
-    "code": "OP14-020",
-    "name": "Dracule Mihawk"
-   },
-   "cards": [
-    {
-     "code": "EB01-015",
-     "name": "Scratchmen Apoo",
-     "type": "Character",
-     "count": 4
-    },
-    {
-     "code": "OP07-026",
-     "name": "Jewelry Bonney",
-     "type": "Character",
-     "count": 3
-    },
-    {
-     "code": "OP12-031",
-     "name": "Tashigi",
-     "type": "Character",
-     "count": 2
-    },
-    {
-     "code": "OP12-034",
-     "name": "Perona",
-     "type": "Character",
-     "count": 4
-    },
-    {
-     "code": "OP12-118",
-     "name": "Jewelry Bonney",
-     "type": "Character",
-     "count": 4
-    },
-    {
-     "code": "OP13-031",
-     "name": "Trafalgar Law",
-     "type": "Character",
-     "count": 4
-    },
-    {
-     "code": "OP14-032",
-     "name": "Humandrill",
-     "type": "Character",
-     "count": 1
-    },
-    {
-     "code": "OP14-033",
-     "name": "Perona",
-     "type": "Character",
-     "count": 2
-    },
-    {
-     "code": "OP14-119",
-     "name": "Dracule Mihawk",
-     "type": "Character",
-     "count": 2
-    },
-    {
-     "code": "OP15-035",
-     "name": "Laboon",
-     "type": "Character",
-     "count": 1
-    },
-    {
-     "code": "PRB02-006",
-     "name": "Roronoa Zoro",
-     "type": "Character",
-     "count": 2
-    },
-    {
-     "code": "ST02-007",
-     "name": "Jewelry Bonney",
-     "type": "Character",
-     "count": 2
-    },
-    {
-     "code": "ST24-002",
-     "name": "Kid & Killer",
-     "type": "Character",
-     "count": 4
-    },
-    {
-     "code": "ST24-004",
-     "name": "Law & Bepo",
-     "type": "Character",
-     "count": 3
-    },
-    {
-     "code": "OP06-038",
-     "name": "The Billion-fold World Trichiliocosm",
-     "type": "Event",
-     "count": 2
-    },
-    {
-     "code": "OP08-036",
-     "name": "Electrical Luna",
-     "type": "Event",
-     "count": 2
-    },
-    {
-     "code": "OP12-037",
-     "name": "Demon Aura Nine Sword Style Asura Blades Drawn Dead Man's Game",
-     "type": "Event",
-     "count": 2
-    },
-    {
-     "code": "OP13-040",
-     "name": "I Know You're Strong... So I'll Go All Out from the Very Start!!!",
-     "type": "Event",
-     "count": 4
-    },
-    {
-     "code": "OP14-039",
-     "name": "Coffin Boat",
-     "type": "Stage",
-     "count": 2
-    }
-   ]
-  },
-  {
    "id": "107",
    "name": "Red Ace",
    "leader": {
@@ -1286,5 +1162,30 @@
     }
    ]
   }
- ]
+ ],
+ "banlist": {
+  "since": "2026-10-12",
+  "banned": [
+   "OP06-047",
+   "OP03-040",
+   "OP06-086",
+   "ST10-001",
+   "OP06-116",
+   "OP14-020"
+  ],
+  "pairs": [
+   [
+    "OP07-115",
+    "EB04-058"
+   ],
+   [
+    "OP11-040",
+    "OP11-067"
+   ],
+   [
+    "OP11-040",
+    "OP08-069"
+   ]
+  ]
+ }
 }
