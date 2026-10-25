@@ -1,0 +1,1290 @@
+{
+ "decks": [
+  {
+   "id": "74",
+   "name": "Blue/Yellow Nami",
+   "leader": {
+    "code": "OP11-041",
+    "name": "Nami"
+   },
+   "cards": [
+    {
+     "code": "EB03-053",
+     "name": "Nami",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "EB03-055",
+     "name": "Nico Robin",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "EB04-058",
+     "name": "Borsalino",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP06-104",
+     "name": "Kikunojo",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP06-106",
+     "name": "Kouzuki Hiyori",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP11-106",
+     "name": "Zeus",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP12-112",
+     "name": "Baby 5",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP13-042",
+     "name": "Edward.Newgate",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "OP14-102",
+     "name": "Kumacy",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP14-104",
+     "name": "Gecko Moria",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP14-110",
+     "name": "Dr. Hogback",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP14-111",
+     "name": "Perona",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP15-113",
+     "name": "Roronoa Zoro",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP15-114",
+     "name": "Wyper",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP15-119",
+     "name": "Monkey.D.Luffy",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP16-056",
+     "name": "Mr.3(Galdino)",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "OP16-119",
+     "name": "Marshall.D.Teach",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "P-096",
+     "name": "Girl",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "PRB02-008",
+     "name": "Marco",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP06-058",
+     "name": "Gravity Blade Raging Tiger",
+     "type": "Event",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "id": "102",
+   "name": "Green/Blue Luffy",
+   "leader": {
+    "code": "OP16-022",
+    "name": "Monkey.D.Luffy"
+   },
+   "cards": [
+    {
+     "code": "OP15-032",
+     "name": "Brook",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP16-026",
+     "name": "Emporio.Ivankov",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP16-027",
+     "name": "Jinbe",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP16-032",
+     "name": "Boa Hancock",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "OP16-034",
+     "name": "Monkey.D.Luffy",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-037",
+     "name": "Mr.3(Galdino)",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP16-042",
+     "name": "Prisoner of Impel Down",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-045",
+     "name": "Crocodile",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-048",
+     "name": "Buggy",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-054",
+     "name": "Mr.1(Daz.Bonez)",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-055",
+     "name": "Mr.2.Bon.Kurei(Bentham)",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-056",
+     "name": "Mr.3(Galdino)",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "ST12-010",
+     "name": "Emporio.Ivankov",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "ST30-014",
+     "name": "Mr.3(Galdino)",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "OP02-068",
+     "name": "Gum-Gum Rain",
+     "type": "Event",
+     "count": 1
+    },
+    {
+     "code": "OP06-058",
+     "name": "Gravity Blade Raging Tiger",
+     "type": "Event",
+     "count": 2
+    },
+    {
+     "code": "OP08-036",
+     "name": "Electrical Luna",
+     "type": "Event",
+     "count": 1
+    },
+    {
+     "code": "OP11-061",
+     "name": "Gum-Gum Jet Culverin",
+     "type": "Event",
+     "count": 1
+    },
+    {
+     "code": "OP12-037",
+     "name": "Demon Aura Nine Sword Style Asura Blades Drawn Dead Man's Game",
+     "type": "Event",
+     "count": 1
+    },
+    {
+     "code": "OP13-040",
+     "name": "I Know You're Strong... So I'll Go All Out from the Very Start!!!",
+     "type": "Event",
+     "count": 1
+    },
+    {
+     "code": "OP16-038",
+     "name": "Let's Go!! To the Navy Headquarters!!",
+     "type": "Event",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "id": "98",
+   "name": "Purple Enel",
+   "leader": {
+    "code": "OP15-058",
+    "name": "Enel"
+   },
+   "cards": [
+    {
+     "code": "OP09-072",
+     "name": "Franky",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "OP10-067",
+     "name": "Senor Pink",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP12-063",
+     "name": "Vinsmoke Reiju",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "OP12-071",
+     "name": "Charlotte Pudding",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP15-061",
+     "name": "Ohm",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP15-066",
+     "name": "Satori",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP15-067",
+     "name": "Shura",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP15-071",
+     "name": "Holly",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP15-118",
+     "name": "Enel",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP05-077",
+     "name": "Gamma Knife",
+     "type": "Event",
+     "count": 3
+    },
+    {
+     "code": "OP13-076",
+     "name": "Divine Departure",
+     "type": "Event",
+     "count": 1
+    },
+    {
+     "code": "OP15-074",
+     "name": "Varie",
+     "type": "Event",
+     "count": 3
+    },
+    {
+     "code": "OP15-075",
+     "name": "El Thor",
+     "type": "Event",
+     "count": 4
+    },
+    {
+     "code": "OP15-076",
+     "name": "Lightning Beast Kiten",
+     "type": "Event",
+     "count": 4
+    },
+    {
+     "code": "OP15-077",
+     "name": "Lightning Dragon",
+     "type": "Event",
+     "count": 4
+    },
+    {
+     "code": "OP15-078",
+     "name": "Mamaragan",
+     "type": "Event",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "id": "103",
+   "name": "Black/Yellow Blackbeard",
+   "leader": {
+    "code": "OP16-080",
+    "name": "Marshall.D.Teach"
+   },
+   "cards": [
+    {
+     "code": "EB04-058",
+     "name": "Borsalino",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP09-086",
+     "name": "Jesus Burgess",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "OP09-093",
+     "name": "Marshall.D.Teach",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP09-095",
+     "name": "Laffitte",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP12-112",
+     "name": "Baby 5",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP14-108",
+     "name": "Silvers Rayleigh",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP14-112",
+     "name": "Boa Hancock",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP15-114",
+     "name": "Wyper",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP16-102",
+     "name": "Avalo Pizarro",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP16-103",
+     "name": "Van Augur",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP16-104",
+     "name": "Catarina Devon",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-106",
+     "name": "Sanjuan.Wolf",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP16-108",
+     "name": "Shiryu",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-109",
+     "name": "Doc Q",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "OP16-110",
+     "name": "Vasco Shot",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-119",
+     "name": "Marshall.D.Teach",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "EB04-059",
+     "name": "Black Rope Dragon Twister",
+     "type": "Event",
+     "count": 1
+    },
+    {
+     "code": "OP09-096",
+     "name": "My Era...Begins!!",
+     "type": "Event",
+     "count": 3
+    },
+    {
+     "code": "OP16-116",
+     "name": "Zehahahahaha!",
+     "type": "Event",
+     "count": 2
+    },
+    {
+     "code": "OP09-099",
+     "name": "Fullalead",
+     "type": "Stage",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "id": "99",
+   "name": "Red/Blue Lucy",
+   "leader": {
+    "code": "OP15-002",
+    "name": "Lucy"
+   },
+   "cards": [
+    {
+     "code": "OP05-015",
+     "name": "Belo Betty",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP08-047",
+     "name": "Jozu",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP09-118",
+     "name": "Gol.D.Roger",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP10-045",
+     "name": "Cavendish",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "OP15-014",
+     "name": "Bartolomeo",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP15-040",
+     "name": "Viola",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP15-046",
+     "name": "Sabo",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP15-052",
+     "name": "Leo",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP15-053",
+     "name": "Rebecca",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP05-019",
+     "name": "Fire Fist",
+     "type": "Event",
+     "count": 2
+    },
+    {
+     "code": "OP06-058",
+     "name": "Gravity Blade Raging Tiger",
+     "type": "Event",
+     "count": 1
+    },
+    {
+     "code": "OP10-059",
+     "name": "Fo...llow...Me...and...I...Will...Gui...de...You",
+     "type": "Event",
+     "count": 1
+    },
+    {
+     "code": "OP10-060",
+     "name": "Barrier-Barrier Pistol",
+     "type": "Event",
+     "count": 4
+    },
+    {
+     "code": "OP15-020",
+     "name": "Fire Fist",
+     "type": "Event",
+     "count": 4
+    },
+    {
+     "code": "OP15-021",
+     "name": "Just Watch Me, Ace!!!",
+     "type": "Event",
+     "count": 3
+    },
+    {
+     "code": "OP15-054",
+     "name": "And No One Else Can Have It! It's Our Memento of Him",
+     "type": "Event",
+     "count": 4
+    },
+    {
+     "code": "OP15-055",
+     "name": "Go Ahead and Use 'Em, Mr. Luffy!!!",
+     "type": "Event",
+     "count": 3
+    },
+    {
+     "code": "ST10-015",
+     "name": "Gum-Gum Giant Sumo Slap",
+     "type": "Event",
+     "count": 1
+    },
+    {
+     "code": "OP15-057",
+     "name": "Dressrosa Kingdom",
+     "type": "Stage",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "id": "104",
+   "name": "Black Yamato",
+   "leader": {
+    "code": "OP16-079",
+    "name": "Yamato"
+   },
+   "cards": [
+    {
+     "code": "OP05-091",
+     "name": "Rebecca",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP13-093",
+     "name": "Morgans",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP16-081",
+     "name": "Otama",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP16-082",
+     "name": "Kin'emon",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-084",
+     "name": "Kouzuki Momonosuke",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-085",
+     "name": "Kouzuki Momonosuke",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-086",
+     "name": "Sanji",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP16-087",
+     "name": "Shinobu",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-088",
+     "name": "Shimotsuki Ushimaru",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP16-091",
+     "name": "Nami",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-092",
+     "name": "Nico Robin",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-095",
+     "name": "Monkey.D.Luffy",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP16-096",
+     "name": "Yamato",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-097",
+     "name": "Yamato",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-098",
+     "name": "Yamato",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP14-096",
+     "name": "Ground Death",
+     "type": "Event",
+     "count": 2
+    },
+    {
+     "code": "OP16-099",
+     "name": "I've Come Here... To Cut Those Chains!!!",
+     "type": "Event",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "id": "86",
+   "name": "Green Mihawk",
+   "leader": {
+    "code": "OP14-020",
+    "name": "Dracule Mihawk"
+   },
+   "cards": [
+    {
+     "code": "EB01-015",
+     "name": "Scratchmen Apoo",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP07-026",
+     "name": "Jewelry Bonney",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "OP12-031",
+     "name": "Tashigi",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP12-034",
+     "name": "Perona",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP12-118",
+     "name": "Jewelry Bonney",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP13-031",
+     "name": "Trafalgar Law",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP14-032",
+     "name": "Humandrill",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP14-033",
+     "name": "Perona",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP14-119",
+     "name": "Dracule Mihawk",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP15-035",
+     "name": "Laboon",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "PRB02-006",
+     "name": "Roronoa Zoro",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "ST02-007",
+     "name": "Jewelry Bonney",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "ST24-002",
+     "name": "Kid & Killer",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "ST24-004",
+     "name": "Law & Bepo",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "OP06-038",
+     "name": "The Billion-fold World Trichiliocosm",
+     "type": "Event",
+     "count": 2
+    },
+    {
+     "code": "OP08-036",
+     "name": "Electrical Luna",
+     "type": "Event",
+     "count": 2
+    },
+    {
+     "code": "OP12-037",
+     "name": "Demon Aura Nine Sword Style Asura Blades Drawn Dead Man's Game",
+     "type": "Event",
+     "count": 2
+    },
+    {
+     "code": "OP13-040",
+     "name": "I Know You're Strong... So I'll Go All Out from the Very Start!!!",
+     "type": "Event",
+     "count": 4
+    },
+    {
+     "code": "OP14-039",
+     "name": "Coffin Boat",
+     "type": "Stage",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "id": "107",
+   "name": "Red Ace",
+   "leader": {
+    "code": "OP16-001",
+    "name": "Portgas.D.Ace"
+   },
+   "cards": [
+    {
+     "code": "EB01-002",
+     "name": "Izo",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "EB04-007",
+     "name": "Roronoa Zoro",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP09-118",
+     "name": "Gol.D.Roger",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP10-005",
+     "name": "Sanji",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP13-007",
+     "name": "Ace & Sabo & Luffy",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP13-016",
+     "name": "Monkey.D.Garp",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-003",
+     "name": "Edward.Newgate",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-004",
+     "name": "Curiel",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-005",
+     "name": "Thatch",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-010",
+     "name": "Namule",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP16-011",
+     "name": "Vista",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-014",
+     "name": "Marco",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-015",
+     "name": "Monkey.D.Luffy",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-017",
+     "name": "LittleOars Jr.",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-118",
+     "name": "Portgas.D.Ace",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "ST23-001",
+     "name": "Uta",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP14-018",
+     "name": "Time for the Counterattack",
+     "type": "Event",
+     "count": 1
+    },
+    {
+     "code": "OP16-021",
+     "name": "Moby Dick",
+     "type": "Stage",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "id": "77",
+   "name": "Red/Black Koby",
+   "leader": {
+    "code": "OP11-001",
+    "name": "Koby"
+   },
+   "cards": [
+    {
+     "code": "EB03-008",
+     "name": "Hibari",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "EB03-041",
+     "name": "Kujyaku",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "EB04-003",
+     "name": "Smoker & Tashigi",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "EB04-044",
+     "name": "Koby",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "EB04-047",
+     "name": "Helmeppo",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP11-004",
+     "name": "Kujyaku",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP11-008",
+     "name": "Doll",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP11-082",
+     "name": "Aramaki",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP11-092",
+     "name": "Helmeppo",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP11-096",
+     "name": "Ripper",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP13-007",
+     "name": "Ace & Sabo & Luffy",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "PRB02-001",
+     "name": "Koby",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP11-099",
+     "name": "I'm Gonna Be a Navy Officer!!!",
+     "type": "Event",
+     "count": 4
+    },
+    {
+     "code": "OP14-096",
+     "name": "Ground Death",
+     "type": "Event",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "id": "79",
+   "name": "Red/Blue Ace",
+   "leader": {
+    "code": "OP13-002",
+    "name": "Portgas.D.Ace"
+   },
+   "cards": [
+    {
+     "code": "EB04-007",
+     "name": "Roronoa Zoro",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP07-051",
+     "name": "Boa Hancock",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP08-047",
+     "name": "Jozu",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP09-118",
+     "name": "Gol.D.Roger",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP13-016",
+     "name": "Monkey.D.Garp",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP13-042",
+     "name": "Edward.Newgate",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP13-043",
+     "name": "Otama",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP13-054",
+     "name": "Yamato",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-004",
+     "name": "Curiel",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "OP16-056",
+     "name": "Mr.3(Galdino)",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "PRB02-008",
+     "name": "Marco",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "ST22-002",
+     "name": "Izo",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "ST23-001",
+     "name": "Uta",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "ST22-015",
+     "name": "I Am Whitebeard!!",
+     "type": "Event",
+     "count": 4
+    },
+    {
+     "code": "OP16-021",
+     "name": "Moby Dick",
+     "type": "Stage",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "id": "53",
+   "name": "Red Shanks",
+   "leader": {
+    "code": "OP09-001",
+    "name": "Shanks"
+   },
+   "cards": [
+    {
+     "code": "EB04-007",
+     "name": "Roronoa Zoro",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "OP06-007",
+     "name": "Shanks",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "OP09-002",
+     "name": "Uta",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "OP09-004",
+     "name": "Shanks",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP09-009",
+     "name": "Benn.Beckman",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP09-011",
+     "name": "Hongo",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP09-015",
+     "name": "Lucky.Roux",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP12-008",
+     "name": "Shanks",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "OP13-007",
+     "name": "Ace & Sabo & Luffy",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "OP16-012",
+     "name": "Benn.Beckman",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP16-018",
+     "name": "Rockstar",
+     "type": "Character",
+     "count": 1
+    },
+    {
+     "code": "PRB02-001",
+     "name": "Koby",
+     "type": "Character",
+     "count": 2
+    },
+    {
+     "code": "PRB02-002",
+     "name": "Trafalgar Law",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "PRB02-003",
+     "name": "Lucky.Roux",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "ST23-001",
+     "name": "Uta",
+     "type": "Character",
+     "count": 3
+    },
+    {
+     "code": "ST23-002",
+     "name": "Shanks",
+     "type": "Character",
+     "count": 4
+    },
+    {
+     "code": "OP09-020",
+     "name": "Come On!! We'll Fight You!!",
+     "type": "Event",
+     "count": 2
+    }
+   ]
+  }
+ ]
+}

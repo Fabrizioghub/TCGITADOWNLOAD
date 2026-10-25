@@ -73,6 +73,8 @@ Con lo zip, estrai la nuova versione in una cartella nuova.
 Entra nel server Discord di TCGITA per trovare avversari, scambiare mazzi, chiedere aiuto e ricevere gli annunci delle nuove versioni:
 **[discord.gg/6hSnUejG33](https://discord.gg/6hSnUejG33)**
 
+Mazzi più giocati, da copiare o scaricare e importare nell'editor mazzi del simulatore: **[fabrizioghub.github.io/TCGITADOWNLOAD/mazzi](https://fabrizioghub.github.io/TCGITADOWNLOAD/mazzi/)**
+
 Tutti i link in una pagina (download, Discord, Instagram, TikTok): **[fabrizioghub.github.io/TCGITADOWNLOAD](https://fabrizioghub.github.io/TCGITADOWNLOAD/)**
 
 ## Segnalazioni e assistenza
