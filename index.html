@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TCGITA – il primo simulatore One Piece TCG in italiano</title>
+<meta name="description" content="TCGITA: simulatore fan made e non ufficiale di One Piece Card Game con gli effetti delle carte in italiano. Gratis per Windows. Scarica, entra su Discord e seguici sui social.">
+<meta property="og:title" content="TCGITA – il primo simulatore One Piece TCG in italiano">
+<meta property="og:description" content="Gratis per Windows. Fan made, non ufficiale. Scarica, entra su Discord e seguici sui social.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://fabrizioghub.github.io/TCGITADOWNLOAD/logo.png">
+<meta name="theme-color" content="#14101f">
+<link rel="icon" href="logo.png">
+<style>
+  :root { --bg:#14101f; --card:#201a30; --line:#3a3150; --text:#efe7da; --muted:#b3a8c4; --accent:#7a4fb3; --accent2:#a77be0; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f4eee3; --card:#fffaf0; --line:#d8c9ad; --text:#2b2218; --muted:#6b5a45; --accent:#6d4c96; --accent2:#4a2f6e; } }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; background:var(--bg); color:var(--text); font:16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; display:flex; justify-content:center; padding:32px 16px 48px; }
+  main { width:100%; max-width:520px; text-align:center; }
+  img.logo { width:120px; height:120px; border-radius:50%; box-shadow:0 6px 24px #0008; }
+  h1 { font-size:26px; line-height:1.2; margin:18px 0 8px; }
+  p.lead { margin:0 auto 6px; color:var(--muted); max-width:44ch; }
+  .tag { display:inline-block; margin:10px 0 22px; padding:3px 12px; border:1px solid var(--line); border-radius:999px; font-size:13px; color:var(--muted); }
+  a.btn { display:flex; align-items:center; justify-content:center; gap:10px; margin:12px 0; padding:15px 18px; border-radius:14px; background:var(--card); border:1px solid var(--line); color:var(--text); text-decoration:none; font-weight:600; font-size:17px; transition:transform .12s, border-color .12s; }
+  a.btn:hover, a.btn:focus-visible { transform:translateY(-2px); border-color:var(--accent2); outline:none; }
+  a.btn.primary { background:linear-gradient(180deg, var(--accent2), var(--accent)); border-color:var(--accent2); color:#fff; }
+  a.btn small { display:block; font-weight:400; font-size:13px; opacity:.8; }
+  .ico { font-size:22px; }
+  h2 { font-size:15px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin:30px 0 4px; }
+  footer { margin-top:34px; font-size:12.5px; color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="logo.png" alt="Logo TCG Italia" width="120" height="120">
+  <h1>TCGITA<br>il primo simulatore One Piece TCG in italiano</h1>
+  <p class="lead">Gioca a One Piece Card Game con gli effetti delle carte in italiano. Gratis, per Windows, in continuo aggiornamento.</p>
+  <span class="tag">Fan made · non ufficiale</span>
+
+  <a class="btn primary" href="https://github.com/Fabrizioghub/TCGITADOWNLOAD/releases/latest" id="download">
+    <span class="ico">⬇</span><span>Scarica per Windows<small id="version">Ultima versione su GitHub</small></span>
+  </a>
+  <a class="btn" href="https://discord.gg/6hSnUejG33">
+    <span class="ico">💬</span><span>Entra nel server Discord<small>Avversari, mazzi, aiuto e annunci</small></span>
+  </a>
+
+  <h2>Seguici</h2>
+  <a class="btn" href="https://www.instagram.com/tcgitalian1/"><span class="ico">📸</span><span>Instagram</span></a>
+  <a class="btn" href="https://www.tiktok.com/@tcgitalian1"><span class="ico">🎵</span><span>TikTok</span></a>
+
+  <h2>Progetto</h2>
+  <a class="btn" href="https://github.com/Fabrizioghub/TCGITADOWNLOAD#readme"><span class="ico">📖</span><span>Istruzioni e segnalazioni<small>GitHub: guida, bug e traduzioni</small></span></a>
+
+  <footer>
+    TCGITA è un progetto gratuito e non ufficiale, non affiliato a Bandai né ad altri titolari dei diritti di One Piece.
+    Verrà ritirato quando sarà disponibile un simulatore ufficiale.
+  </footer>
+</main>
+<script>
+  // shows the number of the latest version; the button works without it
+  fetch("https://api.github.com/repos/Fabrizioghub/TCGITADOWNLOAD/releases/latest")
+    .then((r) => (r.ok ? r.json() : Promise.reject()))
+    .then((d) => { document.getElementById("version").textContent = "Ultima versione: " + d.tag_name; })
+    .catch(() => {});
+</script>
+</body>
+</html>
