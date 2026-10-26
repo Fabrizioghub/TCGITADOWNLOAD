@@ -68,6 +68,14 @@ Se compare **"Dati delle carte non aggiornati"**, premi **Aggiorna i dati delle 
 Scarica l'ultima versione da **[Releases](../../releases/latest)** e installala sopra la vecchia: i tuoi dati e le immagini già scaricate restano.
 Con lo zip, estrai la nuova versione in una cartella nuova.
 
+## I tuoi mazzi
+
+Ogni mazzo che salvi nell'editor è un file `.txt` (una carta per riga, per esempio `4xOP01-024`):
+- **versione portatile:** nella cartella `decks`, accanto a `tcgita.exe`;
+- **versione installata:** in `Documenti\TCGITA\decks`.
+
+Con la portatile, quando passi a una nuova versione copia la cartella `decks` nella cartella nuova. Con l'installer non devi fare niente. Nell'editor il pulsante **Apri la cartella dei mazzi** la apre.
+
 ## Community su Discord
 
 Entra nel server Discord di TCGITA per trovare avversari, scambiare mazzi, chiedere aiuto e ricevere gli annunci delle nuove versioni:
