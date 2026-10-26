@@ -58,7 +58,7 @@ e premi **Usa questo indirizzo**:
 **Indirizzo attuale del server di gioco**
 
 ```
-https://stream-logo-activation-control.trycloudflare.com
+https://stewart-technique-however-anti.trycloudflare.com
 ```
 
 Se compare **"Dati delle carte non aggiornati"**, premi **Aggiorna i dati delle carte** nella lobby e riprova.
