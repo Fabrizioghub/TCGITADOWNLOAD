@@ -81,9 +81,9 @@ Con la portatile, quando passi a una nuova versione copia la cartella `decks` ne
 Entra nel server Discord di TCGITA per trovare avversari, scambiare mazzi, chiedere aiuto e ricevere gli annunci delle nuove versioni:
 **[discord.gg/6hSnUejG33](https://discord.gg/6hSnUejG33)**
 
-Mazzi più giocati, da copiare o scaricare e importare nell'editor mazzi del simulatore: **[fabrizioghub.github.io/TCGITADOWNLOAD/mazzi](https://fabrizioghub.github.io/TCGITADOWNLOAD/mazzi/)**
+Mazzi più giocati, da copiare o scaricare e importare nell'editor mazzi del simulatore: **[tcgitaliaghub.github.io/TCGITADOWNLOAD/mazzi](https://tcgitaliaghub.github.io/TCGITADOWNLOAD/mazzi/)**
 
-Tutti i link in una pagina (download, Discord, Instagram, TikTok, Facebook): **[fabrizioghub.github.io/TCGITADOWNLOAD](https://fabrizioghub.github.io/TCGITADOWNLOAD/)**
+Tutti i link in una pagina (download, Discord, Instagram, TikTok, Facebook): **[tcgitaliaghub.github.io/TCGITADOWNLOAD](https://tcgitaliaghub.github.io/TCGITADOWNLOAD/)**
 
 ## Segnalazioni e assistenza
 

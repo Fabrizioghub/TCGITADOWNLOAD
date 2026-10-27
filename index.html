@@ -8,7 +8,7 @@
 <meta property="og:title" content="TCGITA – il primo simulatore One Piece TCG in italiano">
 <meta property="og:description" content="Gratis per Windows. Fan made, non ufficiale. Scarica, entra su Discord e seguici sui social.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://fabrizioghub.github.io/TCGITADOWNLOAD/logo.png">
+<meta property="og:image" content="https://tcgitaliaghub.github.io/TCGITADOWNLOAD/logo.png">
 <meta name="theme-color" content="#14101f">
 <link rel="icon" href="logo.png">
 <style>
@@ -37,7 +37,7 @@
   <p class="lead">Gioca a One Piece Card Game con gli effetti delle carte in italiano. Gratis, per Windows, in continuo aggiornamento.</p>
   <span class="tag">Fan made · non ufficiale</span>
 
-  <a class="btn primary" href="https://github.com/Fabrizioghub/TCGITADOWNLOAD/releases/latest" id="download">
+  <a class="btn primary" href="https://github.com/TCGITALIAghub/TCGITADOWNLOAD/releases/latest" id="download">
     <span class="ico">⬇</span><span>Scarica per Windows<small id="version">Ultima versione su GitHub</small></span>
   </a>
   <a class="btn" href="mazzi/">
@@ -56,7 +56,7 @@
   <a class="btn" href="https://t.me/tcgitalian1_chat"><span class="ico">💭</span><span>Telegram: gruppo community</span></a>
 
   <h2>Progetto</h2>
-  <a class="btn" href="https://github.com/Fabrizioghub/TCGITADOWNLOAD#readme"><span class="ico">📖</span><span>Istruzioni e segnalazioni<small>GitHub: guida, bug e traduzioni</small></span></a>
+  <a class="btn" href="https://github.com/TCGITALIAghub/TCGITADOWNLOAD#readme"><span class="ico">📖</span><span>Istruzioni e segnalazioni<small>GitHub: guida, bug e traduzioni</small></span></a>
 
   <footer>
     TCGITA è un progetto gratuito e non ufficiale, non affiliato a Bandai né ad altri titolari dei diritti di One Piece.
@@ -65,7 +65,7 @@
 </main>
 <script>
   // shows the number of the latest version; the button works without it
-  fetch("https://api.github.com/repos/Fabrizioghub/TCGITADOWNLOAD/releases/latest")
+  fetch("https://api.github.com/repos/TCGITALIAghub/TCGITADOWNLOAD/releases/latest")
     .then((r) => (r.ok ? r.json() : Promise.reject()))
     .then((d) => { document.getElementById("version").textContent = "Ultima versione: " + d.tag_name; })
     .catch(() => {});
