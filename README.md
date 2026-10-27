@@ -83,7 +83,7 @@ Entra nel server Discord di TCGITA per trovare avversari, scambiare mazzi, chied
 
 Mazzi più giocati, da copiare o scaricare e importare nell'editor mazzi del simulatore: **[fabrizioghub.github.io/TCGITADOWNLOAD/mazzi](https://fabrizioghub.github.io/TCGITADOWNLOAD/mazzi/)**
 
-Tutti i link in una pagina (download, Discord, Instagram, TikTok): **[fabrizioghub.github.io/TCGITADOWNLOAD](https://fabrizioghub.github.io/TCGITADOWNLOAD/)**
+Tutti i link in una pagina (download, Discord, Instagram, TikTok, Facebook): **[fabrizioghub.github.io/TCGITADOWNLOAD](https://fabrizioghub.github.io/TCGITADOWNLOAD/)**
 
 ## Segnalazioni e assistenza
 
