@@ -69,8 +69,6 @@
   .tag { display:inline-block; margin-left:6px; padding:1px 7px; border-radius:999px; font-size:11px; background:#0006; }
   .tag.old { background:#c9a01088; }
   .tag.set { font-weight:700; letter-spacing:.04em; }
-  .soon { margin:8px 16px 0; padding:9px 12px; border:1px solid #ffd24a88; background:#ffd24a1a; border-radius:10px; font-size:13px; }
-  .soon b { color:#ffd24a; }
   .tag.eb05 { background:#ffd24a; color:#1b1530; }
   .tag.op17 { background:#7aa7ff; color:#10203f; }
   .none { color:var(--dim); padding:24px 16px; }
@@ -90,7 +88,6 @@
 <div class="tools"><input id="q" type="search" placeholder="Cerca un Leader, un mazzo o un set (EB05, OP17)…" aria-label="Cerca un mazzo"></div>
 <div class="filters" id="filters" aria-label="Filtri"></div>
 <div class="how">Copia la lista o scarica il .txt, poi nel simulatore: <b>Editor mazzi → Importa lista / Importa file</b>.</div>
-<div class="soon" id="soon"><b>Carte di EB05 in arrivo sul simulatore.</b> I mazzi EB05 si possono già copiare o scaricare, ma il simulatore ne riconoscerà le carte nuove solo con il prossimo aggiornamento.</div>
 <section class="banbox" id="ban"></section>
 <main id="decks"><div class="none">Carico i mazzi…</div></main>
 <footer>
@@ -173,7 +170,6 @@
   function render(decks) {
     const root = document.getElementById("decks");
     document.getElementById("count").textContent = `${decks.length} mazzi`;
-    document.getElementById("soon").style.display = decks.some((d) => d.set === "EB05") ? "" : "none";
     root.replaceChildren();
     if (decks.length === 0) return root.append(el("div", "none", "Nessun mazzo trovato."));
     for (const d of decks) {
@@ -211,7 +207,7 @@
       const foot = el("div", "foot");
       foot.append(copy, save);
       const info = [d.set, d.month && new Date(d.month + "-01T00:00:00").toLocaleDateString("it-IT", { month: "long", year: "numeric" })].filter(Boolean).join(" · ");
-      const note = (d.legal ? info : `${info} · non rispetta la banned list attuale`) + (d.source ? ` · Fonte: ${d.source}` : "") + (d.set === "EB05" ? " · Carte EB05 in arrivo sul simulatore" : "");
+      const note = (d.legal ? info : `${info} · non rispetta la banned list attuale`) + (d.source ? ` · Fonte: ${d.source}` : "");
       box.append(list, foot, el("div", "usage", note));
       root.append(box);
     }
