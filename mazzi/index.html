@@ -68,6 +68,11 @@
   .count { color:var(--dim); font-size:13px; padding:2px 16px 0; }
   .tag { display:inline-block; margin-left:6px; padding:1px 7px; border-radius:999px; font-size:11px; background:#0006; }
   .tag.old { background:#c9a01088; }
+  .tag.set { font-weight:700; letter-spacing:.04em; }
+  .soon { margin:8px 16px 0; padding:9px 12px; border:1px solid #ffd24a88; background:#ffd24a1a; border-radius:10px; font-size:13px; }
+  .soon b { color:#ffd24a; }
+  .tag.eb05 { background:#ffd24a; color:#1b1530; }
+  .tag.op17 { background:#7aa7ff; color:#10203f; }
   .none { color:var(--dim); padding:24px 16px; }
   footer { border-top:1px solid var(--line); color:var(--dim); font-size:12px; padding:14px 16px 28px; max-width:900px; }
   footer a { color:var(--accent); }
@@ -82,9 +87,10 @@
     <a class="btn ghost" href="https://discord.gg/6hSnUejG33">Discord</a>
   </nav>
 </header>
-<div class="tools"><input id="q" type="search" placeholder="Cerca un Leader o un mazzo…" aria-label="Cerca un mazzo"></div>
+<div class="tools"><input id="q" type="search" placeholder="Cerca un Leader, un mazzo o un set (EB05, OP17)…" aria-label="Cerca un mazzo"></div>
 <div class="filters" id="filters" aria-label="Filtri"></div>
 <div class="how">Copia la lista o scarica il .txt, poi nel simulatore: <b>Editor mazzi → Importa lista / Importa file</b>.</div>
+<div class="soon" id="soon"><b>Carte di EB05 in arrivo sul simulatore.</b> I mazzi EB05 si possono già copiare o scaricare, ma il simulatore ne riconoscerà le carte nuove solo con il prossimo aggiornamento.</div>
 <section class="banbox" id="ban"></section>
 <main id="decks"><div class="none">Carico i mazzi…</div></main>
 <footer>
@@ -167,11 +173,13 @@
   function render(decks) {
     const root = document.getElementById("decks");
     document.getElementById("count").textContent = `${decks.length} mazzi`;
+    document.getElementById("soon").style.display = decks.some((d) => d.set === "EB05") ? "" : "none";
     root.replaceChildren();
     if (decks.length === 0) return root.append(el("div", "none", "Nessun mazzo trovato."));
     for (const d of decks) {
       const box = el("section", "deck");
       const h = el("h2", "", d.name);
+      if (d.set === "EB05" || d.set === "OP17") h.append(el("span", `tag set ${d.set.toLowerCase()}`, d.set));
       h.append(el("span", d.legal ? "tag" : "tag old", d.legal ? "Banned 12/10/2026" : "Storico"));
       h.style.background = header(d.name);
       const lead = el("div", "leaderbox");
@@ -203,13 +211,14 @@
       const foot = el("div", "foot");
       foot.append(copy, save);
       const info = [d.set, d.month && new Date(d.month + "-01T00:00:00").toLocaleDateString("it-IT", { month: "long", year: "numeric" })].filter(Boolean).join(" · ");
-      box.append(list, foot, el("div", "usage", d.legal ? info : `${info} · non rispetta la banned list attuale`));
+      const note = (d.legal ? info : `${info} · non rispetta la banned list attuale`) + (d.source ? ` · Fonte: ${d.source}` : "") + (d.set === "EB05" ? " · Carte EB05 in arrivo sul simulatore" : "");
+      box.append(list, foot, el("div", "usage", note));
       root.append(box);
     }
   }
 
   const COLOR_IT = { Red:"Rosso", Green:"Verde", Blue:"Blu", Purple:"Viola", Black:"Nero", Yellow:"Giallo" };
-  const state = { era:"all", color:"all", q:"" };
+  const state = { era:"all", set:"all", color:"all", q:"" };
   function chips(root, label, options, key, onChange) {
     const wrap = el("div", "chips");
     wrap.append(el("b", "", label));
@@ -233,11 +242,13 @@
       const q = state.q.trim().toLowerCase();
       render(decks.filter((d) =>
         (state.era === "all" || (state.era === "ban" ? d.legal : !d.legal)) &&
+        (state.set === "all" || (state.set === "other" ? d.set !== "EB05" && d.set !== "OP17" : d.set === state.set)) &&
         (state.color === "all" || d.colors.includes(state.color)) &&
-        (!q || d.name.toLowerCase().includes(q) || d.leader.name.toLowerCase().includes(q))));
+        (!q || d.name.toLowerCase().includes(q) || d.leader.name.toLowerCase().includes(q) || (d.set || "").toLowerCase() === q)));
     };
     const f = document.getElementById("filters");
     chips(f, "Periodo", [["all", "Tutti"], ["ban", "Banned 12 ottobre 2026 (meta attuale)"], ["old", "Storici (prima della banned)"]], "era", refresh);
+    chips(f, "Set", [["all", "Tutti"], ["EB05", "EB05 (nuovo meta)"], ["OP17", "OP17"], ["other", "Altri set"]], "set", refresh);
     chips(f, "Colore", [["all", "Tutti"], ...Object.entries(COLOR_IT).map(([k, v]) => [k, v, "col"])], "color", refresh);
     f.after(Object.assign(el("div", "count"), { id: "count" }));
     document.getElementById("q").addEventListener("input", (e) => { state.q = e.target.value; refresh(); });
