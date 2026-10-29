@@ -58,7 +58,7 @@ e premi **Usa questo indirizzo**:
 **Indirizzo attuale del server di gioco**
 
 ```
-https://amongst-polyphonic-hampshire-clusters.trycloudflare.com
+https://trades-deer-finder-had.trycloudflare.com
 ```
 
 Se compare **"Dati delle carte non aggiornati"**, premi **Aggiorna i dati delle carte** nella lobby e riprova.
